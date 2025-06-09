@@ -111,8 +111,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='hx'
+export VISUAL='hx'
 
 neofetch
 
