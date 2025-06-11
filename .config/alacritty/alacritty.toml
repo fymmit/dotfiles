@@ -1,6 +1,6 @@
 [general]
 import = [
-    "alacritty-theme/themes/gruvbox_dark.toml"
+    "~/.config/alacritty/themes/gruvbox_dark.toml"
 ]
 
 [window]
@@ -12,5 +12,5 @@ opacity = 0.8
 normal = { family = "FiraCode Nerd Font" }
 
 [cursor]
-style = { shape = "Beam" }
+style = { shape = "Block" }
 vi_mode_style = { shape = "Block" }
