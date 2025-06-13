@@ -111,10 +111,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-export EDITOR='hx'
-export VISUAL='hx'
-
-neofetch
+export EDITOR='helix'
+export VISUAL='helix'
 
 # fnm
 FNM_PATH="/home/fymmit/.local/share/fnm"
@@ -122,5 +120,3 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="/home/fymmit/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
-
-export PATH=$PATH:/home/fymmit/.spicetify
