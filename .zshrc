@@ -111,8 +111,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-export EDITOR='helix'
-export VISUAL='helix'
+export EDITOR='micro'
+export VISUAL='micro'
 
 # fnm
 FNM_PATH="/home/fymmit/.local/share/fnm"
