@@ -120,3 +120,5 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="/home/fymmit/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
+
+fastfetch
