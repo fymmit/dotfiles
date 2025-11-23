@@ -1,11 +1,12 @@
 background-opacity = 0.8
 window-decoration = none
 window-width = 120
-window-height = 40
+window-height = 44
 
 shell-integration-features = ssh-env
 
 font-family = FiraCode Nerd Font Mono
+theme = Gruvbox Dark
 
 # This is the configuration file for Ghostty.
 #
