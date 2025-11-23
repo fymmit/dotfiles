@@ -111,8 +111,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-export EDITOR='micro'
-export VISUAL='micro'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # fnm
 FNM_PATH="/home/fymmit/.local/share/fnm"

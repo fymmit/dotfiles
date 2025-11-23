@@ -3,6 +3,10 @@ window-decoration = none
 window-width = 120
 window-height = 40
 
+shell-integration-features = ssh-env
+
+font-family = FiraCode Nerd Font Mono
+
 # This is the configuration file for Ghostty.
 #
 # This template file has been automatically created at the following
