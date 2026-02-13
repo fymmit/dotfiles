@@ -121,4 +121,6 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
+eval "$(zoxide init zsh)"
+
 fastfetch
