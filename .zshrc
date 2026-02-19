@@ -74,4 +74,5 @@ eval "$(zoxide init zsh)"
 fastfetch
 
 # aliases
-alias s=".fuzzel-script-picker"
+alias s=".script-picker"
+
