@@ -9,7 +9,7 @@
 
     "modules-left": [ "niri/workspaces", "niri/window" ],
     "modules-center": [ "clock" ],
-    "modules-right": [ "pulseaudio", "network", "tray" ],
+    "modules-right": [ "custom/audioswitch", "pulseaudio", "network", "tray" ],
 
     "network": {
         "format": "",
@@ -17,10 +17,7 @@
     },
 
     "pulseaudio": { 
-        "format": "{volume}% {icon}", 
-        "format-icons": { 
-            "default": ["\uf026", "\uf027", "\uf028"] 
-        }  
+        "format": "{volume}%"
     },
 
     "niri/window": {
@@ -29,5 +26,13 @@
 
     "clock": {
         "format": "{:%H.%M}"
+    },
+
+    "custom/audioswitch": {
+        "format": "{text}",
+        "exec": "~/source/scripts/current-audio-device.sh",
+        "signal": 10,
+        "exec-on-event": false,
+        "on-click": "~/.local/bin/audioswitch"
     }
 }

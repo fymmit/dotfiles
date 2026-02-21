@@ -1,3 +1,6 @@
+* {
+    font-family: "FiraCode", monospace
+}
 #waybar {
     background-color: #111111;
     color: #ffffff;
