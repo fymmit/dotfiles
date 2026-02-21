@@ -351,6 +351,7 @@ binds {
     // Mod+Shift+P { power-off-monitors; }
 }
 
+include "./workspaces.kdl"
 include "./input.kdl"
 include "./startup.kdl"
 include "./shortcuts.kdl"

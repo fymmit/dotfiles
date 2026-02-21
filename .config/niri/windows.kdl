@@ -13,3 +13,15 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id=r#"^spotify$"#
+    open-focused false
+    open-on-workspace "second-monitor-shit"
+}
+
+window-rule {
+    match app-id=r#"^discord$"#
+    default-column-width { proportion 0.6667; }
+    open-focused false
+    open-on-workspace "second-monitor-shit"
+}
