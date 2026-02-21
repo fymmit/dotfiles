@@ -26,4 +26,9 @@ window-rule {
     open-on-workspace "chat"
 }
 
+window-rule {
+    match app-id=r#"^(firefox|zen)$"#
+    default-column-width { proportion 0.75; }
+}
+
 include "./secret.kdl"

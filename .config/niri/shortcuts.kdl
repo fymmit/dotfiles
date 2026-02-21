@@ -1,6 +1,7 @@
 binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+E hotkey-overlay-title="Run an Application: Nautilus" { spawn "nautilus"; }
+    Mod+E hotkey-overlay-title="Run an Application: yazi" { spawn-sh "ghostty -e yazi"; }
     Mod+A hotkey-overlay-title="Audioswitch" { spawn-sh "$HOME/.local/bin/audioswitch"; }
+    Mod+P { spawn-sh "~/source/scripts/niri-window-picker.sh"; }
 }
