@@ -147,9 +147,9 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         // off
 
-        width 2
-        active-color "#fe8019"
-        inactive-color "#505050"
+        width 1
+        active-color "#bbbbbb"
+        inactive-color "#111111"
 
         // Color of the border around windows that request your attention.
         urgent-color "#9b0000"
@@ -214,7 +214,7 @@ layout {
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.

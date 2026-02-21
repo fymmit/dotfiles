@@ -16,12 +16,14 @@ window-rule {
 window-rule {
     match app-id=r#"^spotify$"#
     open-focused false
-    open-on-workspace "second-monitor-shit"
+    open-on-workspace "chat"
 }
 
 window-rule {
     match app-id=r#"^discord$"#
     default-column-width { proportion 0.6667; }
     open-focused false
-    open-on-workspace "second-monitor-shit"
+    open-on-workspace "chat"
 }
+
+include "./secret.kdl"
