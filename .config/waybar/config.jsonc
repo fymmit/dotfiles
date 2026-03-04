@@ -1,38 +1,79 @@
-{
-    "layer": "bottom",
-    "position": "top",
-    "autohide": true,
-    "autohide-blocked": false,
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
-
-    "modules-left": [ "niri/workspaces", "niri/window" ],
-    "modules-center": [ "clock" ],
-    "modules-right": [ "custom/audioswitch", "pulseaudio", "network", "tray" ],
-
-    "network": {
-        "format": "",
-        "format-disconnected": "No internet"
+[
+    {
+        "output": ["HDMI-A-1"],
+        "include": [
+            "~/.config/waybar/shared-options.jsonc"
+        ]
     },
+    {
+        "output": ["DP-3"],
+        "include": [
+            "~/.config/waybar/shared-options.jsonc"
+        ],
+        "modules-right": [
+            "custom/np",
+            "custom/wttr",
+            "group/audio",
+            "network",
+            "custom/updatecheck",
+            "tray"
+        ],
 
-    "pulseaudio": { 
-        "format": "{volume}%"
-    },
+        "network": {
+            "format": "",
+            "format-disconnected": "No internet"
+        },
 
-    "niri/window": {
-        "separate-outputs": true
-    },
+        "group/audio": {
+            "orientation": "horizontal",
+            "modules": [
+                "custom/audioswitch",
+                "pulseaudio"
+            ]
+            
+        },
+        "pulseaudio": { 
+            "format": "{volume}%"
+        },
 
-    "clock": {
-        "format": "{:%H.%M}"
-    },
 
-    "custom/audioswitch": {
-        "format": "{text}",
-        "exec": "~/source/scripts/current-audio-device.sh",
-        "signal": 10,
-        "exec-on-event": false,
-        "on-click": "~/.local/bin/audioswitch"
+        "clock": {
+            "format": "{:%H.%M}",
+            "tooltip": true,
+            "tooltip-format": "<tt><small>{calendar}</small></tt>",
+            "calendar": {
+                "format": {
+                    "today": "<span color='#ffffff'>{}</span>",
+                    "days": "<span color='#bbbbbb'>{}</span>"
+                }
+            }
+        },
+
+        "custom/audioswitch": {
+            "format": "{text}",
+            "exec": "cat ~/script-data/audio_info.txt",
+            "signal": 10,
+            "exec-on-event": false,
+            "on-click": "~/.local/bin/audioswitch"
+        },
+        "custom/wttr": {
+            "format": "{}",
+            "exec": "cat ~/script-data/weather_info.txt",
+            "signal": 12
+        },
+        "custom/np": {
+            "format": "{}",
+            "exec": "~/.local/bin/now-playing",
+            "max-length": 60
+        },
+        "custom/updatecheck": {
+            "format": "{text}",
+            "tooltip": true,
+            "tooltip-format": "<tt>{alt}</tt>",
+            "exec": "cat ~/script-data/update_info.txt",
+            "on-click": "~/source/scripts/update-check.sh",
+            "return-type": "json",
+            "signal": 11
+        }
     }
-}
+]

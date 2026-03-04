@@ -1,0 +1,19 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "autohide": true,
+    "autohide-blocked": false,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "spacing": 12,
+    "height": 24,
+
+    "modules-left": [ "niri/workspaces", "niri/window" ],
+    "modules-center": [ "clock" ],
+
+    "niri/window": {
+        "format": "{}",
+        "separate-outputs": true
+    }
+}
