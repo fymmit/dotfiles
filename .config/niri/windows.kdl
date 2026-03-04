@@ -4,6 +4,20 @@ window-rule {
 }
 
 window-rule {
+    match app-id="com.cavameme"
+    // match title=r#"cava"#
+    open-focused false
+    open-on-workspace "music"
+    // open-floating true
+    default-floating-position x=8 y=8 relative-to="top-right"
+    default-window-height { proportion 0.25; }
+
+    border {
+        off
+    }
+}
+
+window-rule {
     match app-id=r#"^Minecraft"#
     open-floating true
 }
@@ -16,7 +30,14 @@ window-rule {
 window-rule {
     match app-id=r#"^spotify$"#
     open-focused false
-    open-on-workspace "chat"
+    open-on-workspace "music"
+    default-column-width { proportion 0.6667; }
+}
+
+window-rule {
+    match app-id="com.ncspot"
+    open-focused false
+    open-on-workspace "music"
 }
 
 window-rule {
@@ -30,5 +51,3 @@ window-rule {
     match app-id=r#"^(firefox|zen)$"#
     default-column-width { proportion 0.75; }
 }
-
-include "./secret.kdl"

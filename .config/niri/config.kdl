@@ -205,10 +205,10 @@ layout {
     // Top and bottom struts will simply add outer gaps in addition to the area occupied by
     // layer-shell panels and regular gaps.
     struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
+        left 24
+        right 24
+        top 24
+        bottom 24
     }
 }
 
@@ -237,7 +237,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot_%Y%m%d_%H%M%S.png"
 // https://yalter.github.io/niri/Configuration:-Animations
 animations {
     // Uncomment to turn off all animations.
-    // off
+    off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
@@ -357,3 +357,4 @@ include "./startup.kdl"
 include "./shortcuts.kdl"
 include "./windows.kdl"
 include "./navigation.kdl"
+include "./cursor.kdl"

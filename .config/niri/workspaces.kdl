@@ -2,3 +2,6 @@ workspace "chat" {
     open-on-output "HDMI-A-1"
 }
 
+workspace "music" {
+    open-on-output "HDMI-A-1"
+}
