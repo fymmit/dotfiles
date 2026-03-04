@@ -70,6 +70,7 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 eval "$(zoxide init zsh)"
+source <(fzf --zsh)
 
 fastfetch
 
