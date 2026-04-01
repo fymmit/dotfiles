@@ -1,12 +1,12 @@
 [
+    // {
+    //     "output": ["HDMI-A-1"],
+    //     "include": [
+    //         "~/.config/waybar/shared-options.jsonc"
+    //     ]
+    // },
     {
-        "output": ["HDMI-A-1"],
-        "include": [
-            "~/.config/waybar/shared-options.jsonc"
-        ]
-    },
-    {
-        "output": ["DP-3"],
+        // "output": ["DP-3"],
         "include": [
             "~/.config/waybar/shared-options.jsonc"
         ],
@@ -15,6 +15,7 @@
             "custom/wttr",
             "group/audio",
             "network",
+            "battery",
             "custom/updatecheck",
             "tray"
         ],
