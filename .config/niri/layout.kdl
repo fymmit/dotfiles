@@ -20,10 +20,19 @@ layout {
 
     default-column-width { proportion 0.5; }
     border {
+        on
         width 1
         active-color "#bbbbbb"
         inactive-color "#111111"
 
         urgent-color "#9b0000"
     }
+
+    struts {
+        left 16
+        bottom 16
+        top 16
+        right 16
+    }
 }
+

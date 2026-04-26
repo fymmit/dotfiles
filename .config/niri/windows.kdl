@@ -1,4 +1,15 @@
 window-rule {
+    match is-active=false
+    opacity 0.8
+}
+
+window-rule {
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
     match app-id="chatterino"
     default-column-width { proportion 0.25; }
 }
@@ -28,7 +39,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"^spotify$"#
+    match app-id=r#"^Spotify$"#
     open-focused false
     open-on-workspace "music"
     default-column-width { proportion 0.6667; }
