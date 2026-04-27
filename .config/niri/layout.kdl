@@ -23,7 +23,7 @@ layout {
         on
         width 1
         active-color "#bbbbbb"
-        inactive-color "#111111"
+        inactive-color "#11111100"
 
         urgent-color "#9b0000"
     }
