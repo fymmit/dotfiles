@@ -17,6 +17,8 @@
 # options using:
 #     config nu --doc | nu-highlight | less -R
 
+$env.PATH = $env.PATH | prepend $"($env.HOME)/.local/bin"
+
 $env.config.buffer_editor = "nvim"
 $env.config.show_banner = false
 
