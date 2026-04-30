@@ -11,9 +11,64 @@
 
     "modules-left": [ "niri/workspaces", "niri/window" ],
     "modules-center": [ "clock" ],
+    "modules-right": [
+        "custom/np",
+        "custom/wttr",
+        "network",
+        "group/audio",
+        "custom/updatecheck",
+        "tray"
+    ],
 
     "niri/window": {
         "format": "{}",
         "separate-outputs": true
+    },
+    "network": {
+        "format": "",
+        "format-disconnected": "No internet"
+    },
+
+    "group/audio": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/audioswitch",
+            "pulseaudio"
+        ]
+        
+    },
+    "pulseaudio": { 
+        "format": "{volume}%"
+    },
+
+
+    "clock": {
+        "format": "{:%H.%M}",
+        "tooltip": true,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "format": {
+                "today": "<span color='#ffffff'>{}</span>",
+                "days": "<span color='#bbbbbb'>{}</span>"
+            }
+        }
+    },
+
+    "custom/audioswitch": {
+        "format": "{text}",
+        "exec": "cat ~/script-data/audio_info.txt",
+        "signal": 10,
+        "exec-on-event": false,
+        "on-click": "~/.local/bin/audioswitch"
+    },
+    "custom/wttr": {
+        "format": "{}",
+        "exec": "cat ~/script-data/weather_info.txt",
+        "signal": 12
+    },
+    "custom/np": {
+        "format": "{}",
+        "exec": "~/.local/bin/now-playing",
+        "max-length": 60
     }
 }
