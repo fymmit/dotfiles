@@ -24,6 +24,9 @@ $env.config.show_banner = false
 
 source ~/.zoxide.nu
 
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+
 def --env y [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
 	^yazi ...$args --cwd-file $tmp
@@ -33,3 +36,4 @@ def --env y [...args] {
 	}
 	rm -fp $tmp
 }
+
