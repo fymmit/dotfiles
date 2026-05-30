@@ -1,0 +1,8 @@
+[options]
+fullscreen = false
+width = 960
+height = 960
+scaling_mode = shrink
+
+[binds]
+y = exec wl-copy < "$imv_current_file"
