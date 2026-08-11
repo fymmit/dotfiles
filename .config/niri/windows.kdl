@@ -41,6 +41,11 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"^imv$"#
+    open-floating true
+}
+
+window-rule {
     match app-id=r#"^Spotify$"#
     open-focused false
     open-on-workspace "music"
@@ -58,6 +63,21 @@ window-rule {
     default-column-width { proportion 0.6667; }
     open-focused false
     open-on-workspace "chat"
+}
+
+window-rule {
+    match title="^Steam$"
+    default-column-width { proportion 0.6667; }
+    open-focused false
+    open-on-workspace "games"
+}
+
+window-rule {
+    match title="Prism Launcher"
+    match title="Bottles"
+    match title="Lutris"
+    open-focused false
+    open-on-workspace "games"
 }
 
 window-rule {

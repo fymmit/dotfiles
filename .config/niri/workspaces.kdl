@@ -5,3 +5,11 @@ workspace "chat" {
 workspace "music" {
     open-on-output "HDMI-A-1"
 }
+
+workspace "1" {
+    open-on-output "DP-1"
+}
+
+workspace "games" {
+    open-on-output "DP-1"
+}
