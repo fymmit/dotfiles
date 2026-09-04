@@ -79,15 +79,6 @@ window-rule {
     draw-border-with-background false
 }
 
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -188,3 +179,4 @@ include "./shortcuts.kdl"
 include "./windows.kdl"
 include "./navigation.kdl"
 include "./cursor.kdl"
+include "./gestures.kdl"
