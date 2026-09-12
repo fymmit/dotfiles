@@ -4,7 +4,7 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 
 # CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
@@ -71,8 +71,8 @@ fi
 
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
-
-fastfetch
+eval "$(starship init zsh)"
+# fastfetch
 
 # aliases
 alias s=".script-picker"
