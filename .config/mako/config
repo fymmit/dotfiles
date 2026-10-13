@@ -3,3 +3,4 @@ border-size=1
 border-color=#bbbbbbff
 progress-color=over #444444ff
 default-timeout=30000
+layer=overlay
