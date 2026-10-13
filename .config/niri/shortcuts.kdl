@@ -7,4 +7,9 @@ binds {
     Mod+P hotkey-overlay-title="Window picker" { spawn-sh "~/.local/bin/niri-windowpicker"; }
     Mod+Shift+P hotkey-overlay-title="Power menu" { spawn-sh "~/.local/bin/power"; }
     Mod+Shift+G hotkey-overlay-title="Clipboard" { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
+    Mod+Alt+U hotkey-overlay-title="Update check" { spawn-sh "~/source/scripts/update-check.sh"; }
+    Mod+Alt+L hotkey-overlay-title="Lock" { spawn "swaylock"; }
+    Mod+F9 { spawn-sh "~/.local/bin/toggle-recording.sh"; }
+    Mod+F10 { spawn-sh "~/.local/bin/save-replay.sh"; }
+    Mod+F11 { spawn-sh "~/.local/bin/start-replay.sh"; }
 }

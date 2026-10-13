@@ -10,6 +10,10 @@ workspace "1" {
     open-on-output "DP-1"
 }
 
+workspace "dev" {
+    open-on-output "DP-1"
+}
+
 workspace "games" {
     open-on-output "DP-1"
 }
