@@ -1,3 +1,4 @@
+spawn-at-startup "lxqt-policykit-agent"
 spawn-at-startup "ghostty"
 // spawn-at-startup "alacritty"
 spawn-sh-at-startup "wl-paste --watch cliphist store"

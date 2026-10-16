@@ -93,3 +93,8 @@ window-rule {
     match app-id="Godot"
     open-on-workspace "dev"
 }
+
+window-rule {
+    match app-id="lxqt-policykit-agent"
+    open-floating true
+}
